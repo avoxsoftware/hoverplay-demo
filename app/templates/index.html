@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-left">
+    <h1 id="hp-hero-title">Hoverplay Demo</h1>
+    <p id="hp-hero-sub">Small experiments, instant sticky notes, and a playful JSON sandbox — no cloud required.</p>
+    <p>
+      <a id="hp-cta-demo" class="button" href="{{ url_for('demo') }}">Jump In</a>
+      <a id="hp-cta-login" class="button button-ghost" href="{{ url_for('login') }}">Join</a>
+    </p>
+  </div>
+  <div class="hero-right">
+    <img id="hp-hero-img" src="{{ url_for('static', filename='img/hero.svg') }}" alt="Hero illustration">
+  </div>
+</section>
+{% endblock %}

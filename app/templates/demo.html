@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container demo-container">
+  <h2 id="hp-demo-heading">Playroom</h2>
+  <p id="hp-welcome">Hey {{ user }} — welcome to your playroom. Stash notes below and experiment with JSON in the sandbox.</p>
+
+  <section class="card" id="hp-notes-card">
+    <h3 id="hp-notes-title">Pocket Notes</h3>
+    <div class="form-row">
+      <input id="hp-input-note-title" placeholder="Title your note">
+      <button id="hp-btn-add-note" class="button">Add Note</button>
+    </div>
+    <textarea id="hp-input-note-content" placeholder="Write something fun..." rows="4"></textarea>
+    <div class="form-row">
+      <button id="hp-btn-save-note" class="button">Keep Note</button>
+      <button id="hp-btn-clear-notes" class="button button-ghost">Clear All</button>
+    </div>
+    <ul id="hp-list-notes" class="notes-list"></ul>
+  </section>
+
+  <section class="card" id="hp-json-card">
+    <h3 id="hp-json-title">JSON Sandbox</h3>
+    <textarea id="hp-input-json" placeholder='{"example": 1}' rows="6"></textarea>
+    <div class="form-row">
+      <button id="hp-btn-parse-json" class="button">Inspect</button>
+      <button id="hp-btn-copy-json" class="button button-ghost">Grab</button>
+    </div>
+    <pre id="hp-json-output" class="json-output"></pre>
+  </section>
+
+  <div class="form-row">
+    <a id="hp-btn-logout" class="button button-ghost" href="{{ url_for('logout') }}">Leave Playroom</a>
+  </div>
+</div>
+{% endblock %}

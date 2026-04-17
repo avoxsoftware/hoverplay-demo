@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card auth-card">
+  <h2 id="hp-login-heading">Join the Playroom</h2>
+  <form id="hp-form-login" method="post" action="{{ url_for('login') }}">
+    <label for="hp-input-username">Handle</label>
+    <input id="hp-input-username" name="username" type="text" required value="{{ request.form.username or '' }}">
+    <label for="hp-input-password">Secret</label>
+    <input id="hp-input-password" name="password" type="password" required>
+    <div class="form-actions">
+      <button id="hp-btn-login" type="submit" class="button">Hop In</button>
+      <a id="hp-link-home" class="button button-ghost" href="{{ url_for('index') }}">Back</a>
+    </div>
+  </form>
+  {% if error %}
+    <div id="hp-login-error" class="error">{{ error }}</div>
+  {% endif %}
+</div>
+{% endblock %}
