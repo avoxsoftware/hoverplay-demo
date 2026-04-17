@@ -1,0 +1,73 @@
+{
+  "project_name": "homepage_tour",
+  "subtitle_mode": "hardcoded",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/",
+      "voiceover_text": "Welcome to the Hoverplay Demo. We open the homepage to start our tour.",
+      "wait_after": 2000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-hero-title",
+      "scroll_position": "center",
+      "wait_after": 500
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The hero section greets us with the app's tagline — sticky notes, a JSON sandbox, and a sign-in flow, all in one small app.",
+      "wait_after": 3000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-nav-about",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-nav-about",
+      "voiceover_text": "We click the About link in the navigation bar to learn more about the app.",
+      "trigger_word": "click",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-about-heading",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The About page gives a short summary of what the demo offers.",
+      "wait_after": 2500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-nav-home",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-nav-home",
+      "voiceover_text": "We navigate back to the homepage using the logo in the navigation bar.",
+      "trigger_word": "navigate",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-cta-login",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-cta-login",
+      "voiceover_text": "Finally, we click the Join button to head over to the login page.",
+      "trigger_word": "click",
+      "wait_after": 1500
+    }
+  ]
+}

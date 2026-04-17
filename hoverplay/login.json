@@ -1,0 +1,86 @@
+{
+  "project_name": "login",
+  "subtitle_mode": "hardcoded",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/",
+      "voiceover_text": "We start on the Hoverplay Demo homepage.",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-nav-login",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-nav-login",
+      "voiceover_text": "We click Login in the navigation bar to reach the sign-in page.",
+      "trigger_word": "click",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-login-heading",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The Join the Playroom form asks for a handle and a secret.",
+      "wait_after": 2000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-username",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-username",
+      "text": "demo",
+      "voiceover_text": "We type the demo handle into the username field.",
+      "wait_after": 800
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-password",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-password",
+      "text": "demo",
+      "voiceover_text": "We enter the password in the secret field.",
+      "wait_after": 800
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-login",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-login",
+      "voiceover_text": "We click Hop In to submit the form and log into the app.",
+      "trigger_word": "click",
+      "wait_after": 2000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-demo-heading",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "We are now inside the Playroom. The app confirms our username and gives us access to all features.",
+      "wait_after": 2500
+    }
+  ]
+}

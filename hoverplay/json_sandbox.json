@@ -1,0 +1,137 @@
+{
+  "project_name": "json_sandbox",
+  "subtitle_mode": "hardcoded",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/login",
+      "recorded": false,
+      "wait_after": 1000
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-username",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-password",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-login",
+      "recorded": false,
+      "wait_after": 2000
+    },
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/demo",
+      "voiceover_text": "We are in the Playroom. Let us take a look at the JSON Sandbox.",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-json-card",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The JSON Sandbox is a small playground for validating and formatting JSON on the fly — no external tools needed.",
+      "wait_after": 3000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-json",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-json",
+      "text": "{\"name\":\"Hoverplay\",\"version\":1,\"features\":[\"notes\",\"json\",\"login\"]}",
+      "voiceover_text": "We paste a sample JSON object into the input area.",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-parse-json",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-parse-json",
+      "voiceover_text": "We click Inspect to parse and pretty-print the JSON.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-json-output",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The output panel shows the formatted JSON with two-space indentation, making it easy to read.",
+      "wait_after": 3000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-copy-json",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-copy-json",
+      "voiceover_text": "We click Grab to copy the formatted output to the clipboard.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-json",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-json",
+      "text": "{bad json here",
+      "clear_before_type": true,
+      "voiceover_text": "Now we try submitting invalid JSON to see how the sandbox handles errors.",
+      "wait_after": 800
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-parse-json",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-parse-json",
+      "voiceover_text": "We click Inspect again.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-json-output",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The output panel displays a clear error message describing exactly what went wrong with the JSON syntax.",
+      "wait_after": 2500
+    }
+  ]
+}

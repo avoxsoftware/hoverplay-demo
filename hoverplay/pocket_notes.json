@@ -1,0 +1,185 @@
+{
+  "project_name": "pocket_notes",
+  "subtitle_mode": "hardcoded",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/login",
+      "recorded": false,
+      "wait_after": 1000
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-username",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-password",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-login",
+      "recorded": false,
+      "wait_after": 2000
+    },
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/demo",
+      "voiceover_text": "We are in the Playroom. Let us explore the Pocket Notes feature.",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-notes-card",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The Pocket Notes section lets us jot down quick notes that are saved in the browser.",
+      "wait_after": 2500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-note-title",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-note-title",
+      "text": "My First Note",
+      "voiceover_text": "We type a title for our first note.",
+      "wait_after": 800
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-note-content",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-note-content",
+      "text": "This is the content of my first note.",
+      "voiceover_text": "We fill in the body of the note in the text area below.",
+      "wait_after": 800
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-add-note",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-add-note",
+      "voiceover_text": "We click Add Note to save the entry.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-list-notes",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The note appears at the top of the list immediately. Notes persist across page reloads because they are stored in local storage.",
+      "wait_after": 3000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-note-title",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-note-title",
+      "text": "Second Note",
+      "voiceover_text": "We add a second note to show how the list grows.",
+      "wait_after": 600
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-input-note-content",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-note-content",
+      "text": "Another quick thought.",
+      "wait_after": 600
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-save-note",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-save-note",
+      "voiceover_text": "We click Keep Note — the alternative save button — and the second note is added.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-note-0",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-delete-0",
+      "voiceover_text": "We delete the most recent note using its Delete button.",
+      "trigger_word": "delete",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-list-notes",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "One note remains. We can see that deleting is instant — no confirmation dialog required.",
+      "wait_after": 2500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-clear-notes",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-clear-notes",
+      "voiceover_text": "Finally, we click Clear All to wipe every note at once.",
+      "trigger_word": "click",
+      "wait_after": 1000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-list-notes",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The list is empty. All notes have been cleared from local storage.",
+      "wait_after": 2000
+    }
+  ]
+}

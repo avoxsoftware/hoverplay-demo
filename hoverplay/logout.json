@@ -1,0 +1,73 @@
+{
+  "project_name": "logout",
+  "subtitle_mode": "hardcoded",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/login",
+      "recorded": false,
+      "wait_after": 1000
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-username",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "type",
+      "selector": "#hp-input-password",
+      "text": "demo",
+      "recorded": false,
+      "wait_after": 500
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-login",
+      "recorded": false,
+      "wait_after": 2000
+    },
+    {
+      "action": "goto",
+      "url": "http://localhost:8087/demo",
+      "voiceover_text": "We are signed in and inside the Playroom.",
+      "wait_after": 1500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-welcome",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "The welcome message shows our username, confirming we are authenticated.",
+      "wait_after": 2500
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-btn-logout",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "click",
+      "selector": "#hp-btn-logout",
+      "voiceover_text": "We click Leave Playroom to sign out of the application.",
+      "trigger_word": "click",
+      "wait_after": 2000
+    },
+    {
+      "action": "scroll",
+      "scroll_to": "#hp-nav-login",
+      "scroll_position": "center",
+      "wait_after": 300
+    },
+    {
+      "action": "wait",
+      "voiceover_text": "We are redirected to the homepage. The navigation bar now shows the Login link again, confirming we are signed out.",
+      "wait_after": 2500
+    }
+  ]
+}

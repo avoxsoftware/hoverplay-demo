@@ -5,9 +5,20 @@ services:
     build:
       context: .
       dockerfile: app/Dockerfile
-    ports:
-      - "8087:5000"
+    expose:
+      - "5000"
     env_file:
       - .env
     restart: unless-stopped
-    # For a public deployment consider adding a reverse proxy (Caddy/Traefik) for TLS
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hoverplay-demo.rule=Host(`demo.hoverplay.net`)"
+      - "traefik.http.routers.hoverplay-demo.entrypoints=websecure"
+      - "traefik.http.routers.hoverplay-demo.tls=true"
+      - "traefik.http.services.hoverplay-demo.loadbalancer.server.port=5000"
+    networks:
+      - webproxy
+
+networks:
+  webproxy:
+    external: true
