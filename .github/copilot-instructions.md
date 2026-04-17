@@ -8,3 +8,9 @@ Guidelines for edits:
 - Don't add heavy JS frameworks or build steps.
 - Keep `SECRET_KEY` and demo credentials configurable via environment variables.
 - Keep the Docker Compose setup simple: one `web` service. Optional TLS should be via reverse proxy.
+
+# Hoverplay Instructions
+
+Install the Hoverplay skill:
+npx skills add mfyll/hoverplay@hoverplay-job-builder
+
