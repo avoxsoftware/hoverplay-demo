@@ -16,7 +16,7 @@ Quick start
 ```bash
 cp .env.example .env   # edit if you want to change credentials
 docker-compose up --build -d
-# Visit the mapped host port shown by `docker compose ps` (e.g. http://localhost:8087)
+# Visit the mapped host port shown by `docker compose ps` (e.g. http://10.0.5.10:8087/)
 ```
 
 Default credentials (from `.env.example`):

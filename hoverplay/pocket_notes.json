@@ -4,7 +4,7 @@
   "steps": [
     {
       "action": "goto",
-      "url": "http://localhost:8087/login",
+      "url": "http://10.0.5.10:8087//login",
       "recorded": false,
       "wait_after": 1000
     },
@@ -30,7 +30,7 @@
     },
     {
       "action": "goto",
-      "url": "http://localhost:8087/demo",
+      "url": "http://10.0.5.10:8087//demo",
       "voiceover_text": "We are in the Playroom. Let us explore the Pocket Notes feature.",
       "wait_after": 1500
     },

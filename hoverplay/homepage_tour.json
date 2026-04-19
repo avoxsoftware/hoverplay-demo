@@ -4,7 +4,7 @@
   "steps": [
     {
       "action": "goto",
-      "url": "http://localhost:8087/",
+      "url": "http://10.0.5.10:8087//",
       "voiceover_text": "Welcome to the Hoverplay Demo. We open the homepage to start our tour.",
       "wait_after": 2000
     },
