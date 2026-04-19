@@ -13,14 +13,14 @@
       "selector": "#hp-input-username",
       "text": "demo",
       "recorded": false,
-      "wait_after": 500
+      "wait_after": 300
     },
     {
       "action": "type",
       "selector": "#hp-input-password",
       "text": "demo",
       "recorded": false,
-      "wait_after": 500
+      "wait_after": 300
     },
     {
       "action": "click",
@@ -32,7 +32,7 @@
       "action": "goto",
       "url": "http://10.0.5.10:8087//demo",
       "voiceover_text": "We are in the Playroom. Let us explore the Pocket Notes feature.",
-      "wait_after": 1500
+      "wait_after": 1000
     },
     {
       "action": "scroll",
@@ -56,7 +56,7 @@
       "selector": "#hp-input-note-title",
       "text": "My First Note",
       "voiceover_text": "We type a title for our first note.",
-      "wait_after": 800
+      "wait_after": 500
     },
     {
       "action": "scroll",
@@ -69,7 +69,7 @@
       "selector": "#hp-input-note-content",
       "text": "This is the content of my first note.",
       "voiceover_text": "We fill in the body of the note in the text area below.",
-      "wait_after": 800
+      "wait_after": 500
     },
     {
       "action": "scroll",
@@ -93,7 +93,7 @@
     {
       "action": "wait",
       "voiceover_text": "The note appears at the top of the list immediately. Notes persist across page reloads because they are stored in local storage.",
-      "wait_after": 3000
+      "wait_after": 2000
     },
     {
       "action": "scroll",
@@ -155,7 +155,7 @@
     {
       "action": "wait",
       "voiceover_text": "One note remains. We can see that deleting is instant — no confirmation dialog required.",
-      "wait_after": 2500
+      "wait_after": 2000
     },
     {
       "action": "scroll",
