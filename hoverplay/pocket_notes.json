@@ -4,7 +4,7 @@
   "steps": [
     {
       "action": "goto",
-      "url": "http://10.0.5.10:8087//login",
+      "url": "https://demo.hoverplay.net/login",
       "recorded": false,
       "wait_after": 1000
     },
@@ -30,7 +30,7 @@
     },
     {
       "action": "goto",
-      "url": "http://10.0.5.10:8087//demo",
+      "url": "https://demo.hoverplay.net/demo",
       "voiceover_text": "We are in the Playroom. Let us explore the Pocket Notes feature.",
       "wait_after": 1000
     },
